@@ -7,7 +7,7 @@ public class LevelGeneration : MonoBehaviour
 
     public float timeToGenerate;
     public float c_timeToGenerate;
-    
+    List<GameObject> pipes = new List<GameObject>();
 
     
 
@@ -30,6 +30,7 @@ public class LevelGeneration : MonoBehaviour
         GameObject pipe = TrashMan.spawn("pipe", new Vector3(230, 0, 0));
         pipe.GetComponent<Pipe>().ResetGO();
 
+        pipes.Add(pipe);
         Vector3 newpos = pipe.transform.position;
         int factor = Random.Range(0, 100) < 50 ? 1 : -1;
         newpos.y += Random.Range(0, 15) * 10 * factor;
@@ -41,9 +42,14 @@ public class LevelGeneration : MonoBehaviour
     {
         this.generating = true;
     }
+
     bool generating = false;
     public void StopGeneration()
     {
         this.generating = false;
+        for (int i = 0; i < pipes.Count; i++)
+        {
+            TrashMan.despawn(pipes[i]);
+        }
     }
 }

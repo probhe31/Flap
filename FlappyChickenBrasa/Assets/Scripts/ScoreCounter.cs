@@ -8,6 +8,11 @@ public class ScoreCounter : MonoBehaviour
     public HudText hudScore;
     public AudioSource scoreSound;
 
+    public void ResetScore()
+    {
+        score = 0;
+    }
+
     public void AddPoint()
     {
         this.score++;

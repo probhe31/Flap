@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Game : MonoBehaviour
 {
@@ -8,9 +10,10 @@ public class Game : MonoBehaviour
     public static Game Instance;
     [HideInInspector]
     public ScoreCounter scoreCounter;
-    public GameObject player;
+    public Player player;
     public LevelGeneration levelGeneration;
     public CameraShakeV2 shake;
+    bool wasInitGame = false;
 
     private void Awake()
     {
@@ -20,16 +23,39 @@ public class Game : MonoBehaviour
     }
 
 
-    private void Start()
+    private void Update()
     {
-        levelGeneration.StarGeneration();
+        if (Input.GetMouseButtonUp(0))
+        {
+            InitGame();
+        }
     }
 
-    public void GameOver()
+    public void OnPlayerDie()
     {
-        
-        this.player.GetComponent<Flappy>().RemoveControl();
         gVelocity = 0;
-        levelGeneration.StopGeneration();
+        this.levelGeneration.StopGeneration();
+    }
+
+    public void ShowGameOverPopup()
+    {
+
+    }
+
+
+    public void Restart()
+    {
+        this.player.flappy.ResetGO();
+        this.wasInitGame = false;
+        scoreCounter.ResetScore();
+        gVelocity = 300.0f;
+        player.gameObject.SetActive(true);
+    }
+
+    public void InitGame()
+    {
+        wasInitGame = true;
+        player.flappy.StartGame();
+        levelGeneration.StarGeneration();
     }
 }

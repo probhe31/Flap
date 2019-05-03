@@ -9,14 +9,14 @@ public class Flappy : MonoBehaviour
     Animator animator;
     bool flap = false;
     public AudioSource wosh;
-    // Start is called before the first frame update
+    float angle = 0;
+
     void Start()
     {
         this.rb = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!this.hasControl)
@@ -24,19 +24,25 @@ public class Flappy : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            
+
             rb.velocity = Vector2.up * velocity;
-            //this.transform.eulerAngles = new Vector3(0, 0, 30);
             this.flap = true;
             this.animator.SetTrigger("flap");
             this.wosh.Play();
         }
 
-        if(this.flap && this.rb.velocity.y < 0)
+        if(this.flap && this.rb.velocity.y <= 0)
         {
+            angle = Mathf.Lerp(0, -90, -rb.velocity.y / 800);
             this.flap = false;
-            //this.transform.eulerAngles = new Vector3(0, 0, -30);
         }
+        else
+        {
+            angle = Mathf.Lerp(0, 90, rb.velocity.y / 800);
             
+        }
+        transform.rotation = Quaternion.Euler(0, 0, angle);
 
     }
 
@@ -44,6 +50,26 @@ public class Flappy : MonoBehaviour
     bool hasControl = true;
     public void RemoveControl()
     {
+        this.hasControl = false;
+    }
+
+    public void ResetGO()
+    {
+        this.rb.simulated = false;
+        this.hasControl = false;
+        this.transform.localRotation = Quaternion.identity;
+        this.transform.position = new Vector3(-100,0,0);
+    }
+
+    public void StartGame()
+    {
+        this.rb.simulated = true;
+        this.hasControl = true;
+    }
+
+    public void EndGame()
+    {
+        this.rb.simulated = false;
         this.hasControl = false;
     }
 }
