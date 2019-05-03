@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fc0603b69019609222cb84d24bec4100$ -->
+<TextureAtlas imagePath="candela.png">
+    <SubTexture name="tubo_0" x="2" y="128" width="82" height="38" frameX="0" frameY="-4" frameWidth="82" frameHeight="42"/>
+    <SubTexture name="tubo_1" x="2" y="88" width="82" height="38" frameX="0" frameY="-4" frameWidth="82" frameHeight="42"/>
+    <SubTexture name="tubo_2" x="2" y="2" width="82" height="42"/>
+    <SubTexture name="tubo_3" x="2" y="46" width="82" height="40" frameX="0" frameY="-2" frameWidth="82" frameHeight="42"/>
+</TextureAtlas>

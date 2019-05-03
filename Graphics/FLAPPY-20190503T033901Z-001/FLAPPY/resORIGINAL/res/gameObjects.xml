@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:4ae9feabd21dd2a7d2bd3f35d02d40b9$ -->
+<TextureAtlas imagePath="gameObjects.png">
+    <SubTexture name="btn_compartir_hovered" x="604" y="98" width="417" height="46"/>
+    <SubTexture name="btn_compartir_inactive" x="604" y="50" width="417" height="46"/>
+    <SubTexture name="btn_compartir_normal" x="604" y="2" width="417" height="46"/>
+    <SubTexture name="btn_compartir_pressed" x="604" y="50" width="417" height="46"/>
+    <SubTexture name="btn_elegido" x="2" y="692" width="144" height="48"/>
+    <SubTexture name="btn_usar_hovered" x="2" y="642" width="144" height="48"/>
+    <SubTexture name="btn_usar_normal" x="842" y="516" width="144" height="48"/>
+    <SubTexture name="btn_usar_pressed" x="845" y="416" width="144" height="48"/>
+    <SubTexture name="explos0001" x="498" y="450" width="54" height="52" frameX="-4" frameY="-4" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="explos0002" x="970" y="568" width="52" height="54" frameX="-4" frameY="-4" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="explos0003" x="302" y="726" width="50" height="46" frameX="-4" frameY="-8" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0004" x="494" y="700" width="54" height="44" frameX="-2" frameY="-10" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0005" x="497" y="654" width="54" height="44" frameX="-2" frameY="-10" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0006" x="148" y="692" width="54" height="46" frameX="-2" frameY="-8" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0007" x="148" y="642" width="54" height="48" frameX="-2" frameY="-2" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0008" x="497" y="604" width="54" height="48" frameX="-2" frameY="-2" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0009" x="498" y="554" width="54" height="48" frameX="-2" frameY="-2" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="exploss0010" x="498" y="504" width="54" height="48" frameX="-2" frameY="-2" frameWidth="60" frameHeight="60"/>
+    <SubTexture name="flap1_1" x="248" y="794" width="48" height="46" frameX="-2" frameY="0" frameWidth="50" frameHeight="46"/>
+    <SubTexture name="flap1_2" x="148" y="740" width="50" height="46"/>
+    <SubTexture name="flap2_1" x="2" y="993" width="34" height="24"/>
+    <SubTexture name="flap2_2" x="52" y="866" width="34" height="24"/>
+    <SubTexture name="flap2_3" x="52" y="840" width="34" height="24"/>
+    <SubTexture name="flap3_1" x="100" y="742" width="34" height="24"/>
+    <SubTexture name="flap3_2" x="352" y="778" width="34" height="24"/>
+    <SubTexture name="flap3_3" x="354" y="752" width="34" height="24"/>
+    <SubTexture name="flap4_1" x="354" y="726" width="34" height="24"/>
+    <SubTexture name="flap4_2" x="988" y="542" width="34" height="24"/>
+    <SubTexture name="flap4_3" x="988" y="516" width="34" height="24"/>
+    <SubTexture name="fondo_seccion1" x="2" y="383" width="553" height="65"/>
+    <SubTexture name="gameover" x="210" y="594" width="187" height="44"/>
+    <SubTexture name="gameoverpp" x="581" y="146" width="416" height="268"/>
+    <SubTexture name="getready" x="210" y="640" width="184" height="54"/>
+    <SubTexture name="imgmedalla1" x="100" y="788" width="96" height="96"/>
+    <SubTexture name="imgmedalla2" x="2" y="742" width="96" height="96"/>
+    <SubTexture name="imgmedalla3" x="204" y="696" width="96" height="96"/>
+    <SubTexture name="imgmedalla4" x="396" y="692" width="96" height="96"/>
+    <SubTexture name="imgmedalla5" x="399" y="594" width="96" height="96"/>
+    <SubTexture name="inventory_hovered" x="2" y="594" width="206" height="46"/>
+    <SubTexture name="inventory_inactive" x="762" y="566" width="206" height="46"/>
+    <SubTexture name="inventory_normal" x="554" y="560" width="206" height="46"/>
+    <SubTexture name="inventory_pressed" x="762" y="566" width="206" height="46"/>
+    <SubTexture name="later_hovered" x="2" y="546" width="286" height="46"/>
+    <SubTexture name="later_inactive" x="554" y="512" width="286" height="46"/>
+    <SubTexture name="later_normla" x="2" y="498" width="286" height="46"/>
+    <SubTexture name="later_pressed" x="554" y="512" width="286" height="46"/>
+    <SubTexture name="ok" x="302" y="696" width="80" height="28"/>
+    <SubTexture name="play_hovered" x="290" y="546" width="206" height="46"/>
+    <SubTexture name="play_inactive" x="290" y="498" width="206" height="46"/>
+    <SubTexture name="play_normal" x="290" y="450" width="206" height="46"/>
+    <SubTexture name="play_pressed" x="290" y="498" width="206" height="46"/>
+    <SubTexture name="popup_nuevo_inventario" x="2" y="100" width="577" height="281"/>
+    <SubTexture name="reja_abajo" x="2" y="2" width="600" height="62"/>
+    <SubTexture name="reja_arriba" x="2" y="66" width="600" height="32"/>
+    <SubTexture name="share" x="665" y="608" width="80" height="28"/>
+    <SubTexture name="tb1" x="198" y="794" width="48" height="49"/>
+    <SubTexture name="tb2" x="2" y="942" width="48" height="49"/>
+    <SubTexture name="tb3" x="2" y="891" width="48" height="49"/>
+    <SubTexture name="tb4" x="2" y="840" width="48" height="49"/>
+    <SubTexture name="tb5" x="302" y="774" width="48" height="49"/>
+    <SubTexture name="title" x="842" y="466" width="178" height="48"/>
+    <SubTexture name="tutorial" x="553" y="608" width="110" height="98"/>
+    <SubTexture name="usenow_hovered" x="554" y="464" width="286" height="46"/>
+    <SubTexture name="usenow_inactive" x="2" y="450" width="286" height="46"/>
+    <SubTexture name="usenow_normal" x="557" y="416" width="286" height="46"/>
+    <SubTexture name="usenow_pressed" x="2" y="450" width="286" height="46"/>
+</TextureAtlas>
